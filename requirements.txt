@@ -1,0 +1,28 @@
+# Core scientific libraries
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+seaborn
+plotly
+jupyter
+
+# NLP
+nltk
+transformers
+#cso-classifier # https://github.com/angelosalatino/cso-classifier
+
+# Graph and visualisation
+networkx
+rdflib
+pyvis
+
+# LangChain and LLM interfaces
+langchain
+langchain-anthropic
+langchain-mistralai
+langchain-community
+
+# Altmetric
+https://github.com/altmetric/altmetric-explorer-api-client/tarball/main
