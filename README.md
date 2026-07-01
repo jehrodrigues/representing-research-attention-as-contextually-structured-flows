@@ -16,9 +16,9 @@ language expressing it, and the time over which it unfolds.
 We learn the flow with dynamic contextualised representations (/dcwe), yielding three
 variants along two axes, contextual and dynamic:
 
-- **CWE** — contextual (conditions on the linguistic context)
-- **DWE** — dynamic (conditions on the social context over time)
-- **DCWE** — both contextual and dynamic
+- **CWE** — contextualised word embeddings (conditions on the linguistic context)
+- **DWE** — dynamic word embeddings (conditions on the social context over time)
+- **DCWE** — dynamic contextualised word embeddings (both)
 
 To evaluate the flow, we build a benchmark of analogy queries (/data), each testing
 whether the relationship between two outputs, applied to a third, yields a
