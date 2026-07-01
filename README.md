@@ -1,5 +1,36 @@
-# Flowmetrics: Learning Dynamic Contextualised Representations of Attention to Research
+# Representing Research Attention as Contextually Structured Flows
 
-Representing Research Attention as Temporally Structured Flows. Accepted at the Science and Technology Indicators (STI) Conference, 2026.
+Source code for the paper *Representing Research Attention as Contextually
+Structured Flows*, accepted at the Science and Technology Indicators (STI)
+Conference, 2026.
 
-This article serves as a conceptual precursor to the thesis. We introduce attention flows as temporally structured representations of attention, arguing that attention should be represented through how it develops across contexts over time rather than as isolated signals. Our findings show that attention flows preserve meaningful structure and support comparison between research developments.
+## Overview
+
+Research metrics increasingly use attention as evidence of societal impact, but
+altmetrics records signals in isolation, keeping only a count of how much
+attention an output received or a sequence of when. We introduce the **attention
+flow**, a representation that situates an output's attention in the contexts
+through which it is distributed: the social settings where it occurs, the
+language expressing it, and the time over which it unfolds.
+
+We learn the flow with dynamic contextualised representations (/dcwe), yielding three
+variants along two axes, contextual and dynamic:
+
+- **CWE** — contextual (conditions on the linguistic context)
+- **DWE** — dynamic (conditions on the social context over time)
+- **DCWE** — both contextual and dynamic
+
+To evaluate the flow, we build a benchmark of analogy queries (/data), each testing
+whether the relationship between two outputs, applied to a third, yields a
+fourth. We probe three structural properties of attention:
+
+- **Invariance** — the structure is general across outputs
+- **Preservation** — the structure is stable as attention develops
+- **Dependence** — the structure rests on the contexts, not on volume alone
+
+## Findings
+
+The count and sequence baselines fail to recover the analogy relationships,
+while the flow variants recover them. The recovered structure is general across
+outputs, survives partial observation, and rests on the contexts rather than
+volume. DCWE recovers this structure most fully.
